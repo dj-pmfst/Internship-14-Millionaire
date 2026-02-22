@@ -13,7 +13,7 @@ export default function Jokers({ usedFiftyFifty, usedSkip, onFiftyFifty, onSkip 
           onClick={onSkip}
           disabled={usedSkip}
         >
-          Preskoči pitanje
+          Skip question
         </button>
       </div>
     )
