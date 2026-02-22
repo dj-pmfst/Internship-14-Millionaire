@@ -127,3 +127,90 @@
   text-decoration: line-through;
   cursor: not-allowed;
 }
+
+.end-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 16px;
+  background-color: #06061a;
+  color: #fff;
+}
+
+.end-screen h1 {
+  font-size: 2.5rem;
+  color: #f0a500;
+}
+
+.winnings-label {
+  font-size: 1.2rem;
+  color: #aaa;
+}
+
+.winnings-amount {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #f0a500;
+}
+
+.restart-btn {
+  margin-top: 16px;
+  padding: 12px 32px;
+  border-radius: 6px;
+  border: 2px solid #f0a500;
+  background-color: transparent;
+  color: #f0a500;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.restart-btn:hover {
+  background-color: #f0a500;
+  color: #000;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #06061a;
+  font-family: sans-serif;
+}
+
+.game-layout {
+  display: flex;
+  height: 100vh;
+}
+
+.main-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  gap: 24px;
+}
+
+.start-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 24px;
+  background-color: #06061a;
+  color: #fff;
+}
+
+.start-screen h1 {
+  font-size: 2.5rem;
+  color: #f0a500;
+}

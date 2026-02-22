@@ -1,4 +1,4 @@
-export const LEVELS = [
+export const levels = [
   { level: 1, prize: "100 €" },
   { level: 2, prize: "200 €" },
   { level: 3, prize: "500 €" },
@@ -11,4 +11,4 @@ export const LEVELS = [
   { level: 10, prize: "500.000 €" },
 ]
 
-export const SAFE_LEVEL = 5
+export const safe_level = 5

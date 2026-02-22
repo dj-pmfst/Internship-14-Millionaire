@@ -1,14 +1,14 @@
-import { LEVELS, SAFE_LEVEL } from "../constants"
+import { levels, safe_level } from "../constants"
 
 export default function LevelsList({ currentLevel }) {
   return (
     <div className="levels-list">
-      {[...LEVELS].reverse().map((item) => (
+      {[...levels].reverse().map((item) => (
         <div
           key={item.level}
           className={`level-item
             ${item.level === currentLevel + 1 ? "current" : ""}
-            ${item.level === SAFE_LEVEL ? "safe" : ""}
+            ${item.level === safe_level ? "safe" : ""}
             ${item.level < currentLevel + 1 ? "completed" : ""}
           `}
         >
