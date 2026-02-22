@@ -1,4 +1,6 @@
 import startSound from "../assets/audio/start.mp3"
+import image from "../assets/who-wants-to-be-a-millionaire.svg"
+import bgVideo from "../assets/bg.mp4"
 
 export default function StartScreen({ onStart }) {
     function handleClick() {
@@ -9,7 +11,10 @@ export default function StartScreen({ onStart }) {
 
     return (
       <div className="start-screen">
-        <h1>Who wants to be a millionaire?</h1>
+        <video className="bg-video" autoPlay loop muted playsInline>
+          <source src={bgVideo} type="video/mp4" />
+        </video>
+        <img src={image} alt="logo" />
         <button className="restart-btn" onClick={handleClick}>Start</button>
       </div>
     )

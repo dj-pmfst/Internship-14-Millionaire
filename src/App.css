@@ -195,33 +195,67 @@ body {
 .restart-btn {
   margin-top: 16px;
   padding: 12px 32px;
-  border-radius: 6px;
+  border-radius: 20px;
   border: 2px solid #f0a500;
   background-color: transparent;
   color: #f0a500;
   font-size: 1.1rem;
   font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.2s, color 0.2s;
+  transition: background-color 0.2s, border-color 0.2s, box-shadow 0.2s, color 0.2s;
 }
 
 .restart-btn:hover {
   background-color: #f0a500;
   color: #000;
+  box-shadow: 0 0 8px #f0a500, 0 0 20px #f0a500, 0 0 40px #f0a500;
 }
 
-.start-screen {
+.restart-btn:hover:not(:disabled){
+  background-color: #1a1a4a;
+  border-color: #f0a500;
+  box-shadow: 0 0 8px #f0a500, 0 0 20px #f0a500, 0 0 40px #f0a500;
+  color: #f0a500;
+}
+
+.start-screen, .end-screen {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
+  width: 100vw;
   gap: 24px;
   background-color: #06061a;
   color: #fff;
 }
 
-.start-screen h1 {
-  font-size: 2.5rem;
-  color: #f0a500;
+.start-screen img{
+  max-width: 400px;
+}
+
+.start-screen, .end-screen {
+  position: relative;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 20%;
+}
+
+.start-screen img,
+.start-screen button, .end-screen button {
+  position: relative;
+  z-index: 1;
+}
+
+.end-screen h1, .end-screen p {
+  position: relative;
+  z-index: 1;
 }

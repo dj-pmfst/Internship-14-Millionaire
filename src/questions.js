@@ -15,7 +15,7 @@ export const questions = [
         correct: 0
       },
       {
-        question: "Which film won the Best Picture in 92nd Academy Awards?",
+        question: "Which film won the Best Picture in the 92nd Academy Awards?",
         answers: ["Black Swan", "Arrival", "Parasite", "Life of Pi"],
         correct: 2
       },
