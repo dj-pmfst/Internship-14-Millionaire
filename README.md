@@ -1,16 +1,59 @@
-# React + Vite
+# Who Wants to Be a Millionaire?
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Homework 14 - React based "Who wants to ba a millionaire?" web game
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 10 questions randomly selected from a pool of 20
+- Answer order shuffled on every game
+- Prize ladder with 10 levels up to 500.000 €
+- Safe level at 5.000 € — kept on wrong answer after level 5
+- Two jokers per game:
+  - **50:50** — removes two wrong answers
+  - **Skip** — skips the current question
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- Plain CSS
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- Node.js (v18 or higher recommended)
+
+### Installation
+
+1. Clone the repository
+
+2. Navigate into the project folder
+
+3. Install dependencies
+
+4. Start the development server
+
+5. Open your browser at `http://localhost:5173`
+
+## Build for Production
+```
+npm run build
+```
+
+## Project Structure
+```
+src/
+  assets/          # images, audio, video
+  components/
+    StartScreen.jsx
+    QuestionPanel.jsx
+    LevelsList.jsx
+    Jokers.jsx
+    EndScreen.jsx
+    WinScreen.jsx
+  questions.js     
+  constants.js    
+  App.jsx
+  App.css
+```
