@@ -1,10 +1,36 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #06061a;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-layout {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  gap: 80px;
+  padding: 60px;
+}
+
 .levels-list {
   display: flex;
   flex-direction: column;
-  width: 220px;
+    width: 220px;
+    justify-content: center;
   gap: 4px;
   padding: 16px;
   background-color: #0d0d2b;
+  height: 480px;
+  border-radius: 20px;
 }
 
 .level-item {
@@ -13,7 +39,7 @@
   padding: 6px 12px;
   border-radius: 4px;
   color: #ccc;
-  font-size: 0.9rem;
+  font-size: 1rem;
   border: 1px solid transparent;
 }
 
@@ -31,6 +57,17 @@
   background-color: #f0a500;
   color: #000;
   font-weight: bold;
+}
+
+
+.main-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  gap: 24px;
 }
 
 .question-panel {
@@ -171,32 +208,6 @@
 .restart-btn:hover {
   background-color: #f0a500;
   color: #000;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background-color: #06061a;
-  font-family: sans-serif;
-}
-
-.game-layout {
-  display: flex;
-  height: 100vh;
-}
-
-.main-area {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 40px;
-  gap: 24px;
 }
 
 .start-screen {
